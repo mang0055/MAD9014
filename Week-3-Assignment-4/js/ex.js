@@ -4,8 +4,8 @@ var enablePopup=false;
 var howerMainDiv;
 function load() {
     //console.log("load event detected!");
-	status_text=document.getElementById("status");
-	howerMainDiv=document.getElementById("hower-main");
+	status_text=document.querySelector(".short-rect");
+	howerMainDiv=document.querySelector(".long-rect");
 	howerMainDiv.onmouseover = function() {
     	//console.log("Mouse over");
     	enablePopup=true;
@@ -27,6 +27,3 @@ function load() {
 		});
 }
 window.onload = load;
-
-
-
