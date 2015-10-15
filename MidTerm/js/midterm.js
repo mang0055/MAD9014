@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 function loadData() {
     console.log("loadData()");
     var req = new XMLHttpRequest();
-    req.open('GET', 'http://localhost:3000/users.json', false);
+    req.open('GET', 'https://raw.githubusercontent.com/mang0055/MAD9014/master/MidTerm/users.json', false);
     req.onreadystatechange = function() {
         if (req.readyState == 4) {
             if (req.status == 200) {
